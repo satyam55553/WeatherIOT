@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: large;
+    color: slateblue;
+    margin: 5px 5px;
+}
+
+.container {
+    margin: 7px 7px;
+    padding: 7px 7px;
+    display: flexbox;
+    flex-direction: row;
+    background-color: seashell;
+    border: 2px solid rgb(110, 91, 235);
+    ;
+    border-radius: 8px;
+}
+
+.containerDate {
+    padding: 7px 7px;
+}
+
+.btn {
+    padding: 5px 3px;
+    background-color: slateblue;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: sandybrown;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.dateInput {
+    border: 1px solid salmon;
+    border-radius: 7px;
+}
+
+.dateInput:hover {
+    border: 1px solid seagreen;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(110, 91, 235);
+}
+
+.line-inv {
+    height: 1px;
+    background-color: white;
+}
+
+.title {
+    font-size: xx-large;
+    text-shadow: 2px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(110, 91, 235);
+}
+
+.title-text {
+    color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    padding: 6px;
+    /* width: 50%; */
+    /* background-color: purple; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 15px 5px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.about {
+    background-color: rgb(110, 91, 235);
+}
+
+.about-desc {
+    font-family: cursive;
+    display: block;
+    padding: 8px;
+    color: whitesmoke;
+}

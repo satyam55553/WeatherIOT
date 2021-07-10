@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script type='text/javascript' src='config.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container title" id="home"><span class="title-text"><em><b>Weather Monitoring System</b></em></span></div>
+
+    <div class="container" id="tempSection">
+        <p>Temperature Data</p>
+        <div class="line"></div>
+        <div class="containerDate">
+            <label for="tempDate">Please select the date: </label>
+            <input class="dateInput" type="date" id="tempDate" name="tempDate">
+            <button class="btn" onclick="queryFbtemp();" id="plot_temp_btn">Plot data</button>
+        </div>
+        <canvas id="lineChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+    <br>
+    <div class="container" id="humidSection">
+        <p>Humidity Data</p>
+        <div class="line"></div>
+        <div class="containerDate">
+            <label for="humidDate">Please select the date: </label>
+            <input class="dateInput" type="date" id="humidDate" name="humidDate">
+            <button class="btn" onclick="queryFbhumid();" id="plot_humid_btn">Plot data</button>
+        </div>
+        <canvas id="humChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+
+    <div class="container about" id="about">
+        <p class="title-text">About</p>
+        <div class="line-inv"></div>
+        <h5 class="about-desc">This website is developed by Satyam Vishwakarma as a part of VESIT Tinkerers Lab IOT based Weather Monitoring System Internship</h5>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+
+    <script src="myscripts.js"></script>
+</body>
+
+</html>
